@@ -1,11 +1,23 @@
+import Image from "next/image";
+
 export default function ProjectGallery() {
   return (
     <section id="work" className="shell section" aria-labelledby="work-title">
-      <p className="eyebrow">From our workday</p><h2 id="work-title" className="heading">A little look at what we do.</h2>
-      <div className="mt-10 grid gap-7 md:grid-cols-3">
-        <figure><div className="photo-placeholder">[FENCE_PROJECT_PHOTO]</div><figcaption className="mt-4 text-sm">[FENCE_PROJECT_CAPTION]</figcaption></figure>
-        <figure><div className="photo-placeholder bg-[#e9dfd0]">[LANDSCAPING_PROJECT_PHOTO]</div><figcaption className="mt-4 text-sm">[LANDSCAPING_PROJECT_CAPTION]</figcaption></figure>
-        <figure><div className="photo-placeholder bg-[#ecd4bf]">[REMOVAL_PROJECT_PHOTO]</div><figcaption className="mt-4 text-sm">[REMOVAL_PROJECT_CAPTION]</figcaption></figure>
+      <p className="eyebrow">Our work</p>
+      <h2 id="work-title" className="heading">A little look at what we do.</h2>
+      <div className="mt-6 grid gap-5 md:grid-cols-3">
+        <div className="photo-placeholder">
+          <Image src="/images/landscaping.png" alt="" fill sizes="(min-width: 1280px) 370px, (min-width: 768px) 33vw, 100vw" className="object-cover opacity-40" />
+          <span className="relative">[FENCE_PROJECT_PHOTO]</span>
+        </div>
+        <div className="photo-placeholder">
+          <Image src="/images/landscaping.png" alt="" fill sizes="(min-width: 1280px) 370px, (min-width: 768px) 33vw, 100vw" className="object-cover object-right opacity-40" />
+          <span className="relative">[LANDSCAPING_PROJECT_PHOTO]</span>
+        </div>
+        <div className="photo-placeholder">
+          <Image src="/images/junk-removal.png" alt="" fill sizes="(min-width: 1280px) 370px, (min-width: 768px) 33vw, 100vw" className="object-cover opacity-40" />
+          <span className="relative">[REMOVAL_PROJECT_PHOTO]</span>
+        </div>
       </div>
     </section>
   );
