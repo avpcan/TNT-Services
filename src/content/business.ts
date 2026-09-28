@@ -1,5 +1,5 @@
 export const business = {
-  name: "[BUSINESS_NAME]",
+  name: "TNT Services",
   serviceArea: "[SERVICE_AREA]",
   contactMethod: "[CONTACT_METHOD]",
   phone: "[PHONE_NUMBER]",
