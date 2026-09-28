@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #f8f5ed;
+  --color-forest: #25483d;
+  --color-moss: #e6ebdf;
+  --color-peach: #f1be97;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
+body { background: var(--color-cream); color: var(--color-forest); }
+::selection { background: var(--color-peach); color: var(--color-forest); }
+:focus-visible { outline: 3px solid #a44820; outline-offset: 5px; }
+
+@layer components {
+  .shell { @apply mx-auto w-full max-w-6xl px-6 sm:px-10; }
+  .section { @apply py-16 sm:py-24; }
+  .eyebrow { @apply mb-5 text-xs font-bold uppercase tracking-[0.18em]; }
+  .heading { @apply font-serif text-4xl leading-[1.12] tracking-tight sm:text-5xl; }
+  .copy { @apply text-base leading-8 opacity-85; }
+  .button { @apply inline-flex min-h-12 items-center justify-center gap-6 rounded-full bg-forest px-7 py-3 text-sm font-bold text-cream transition-colors hover:bg-[#386451]; }
+  .photo-placeholder { @apply flex min-h-64 items-center justify-center rounded-3xl border border-forest/20 bg-moss p-8 text-center text-sm tracking-wide; overflow-wrap: anywhere; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
