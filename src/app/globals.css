@@ -1,29 +1,35 @@
 @import "tailwindcss";
-
 @theme inline {
-  --color-cream: #f8f5ed;
-  --color-forest: #25483d;
-  --color-moss: #e6ebdf;
-  --color-peach: #f1be97;
+  --color-yellow: #ffda00;
+  --color-ink: #090b0c;
+  --color-red: #ed171c;
+  --color-cream: #ffffff;
+  --color-forest: #090b0c;
+  --color-moss: #e6e6e6;
+  --color-peach: #ffda00;
   --font-sans: Arial, Helvetica, sans-serif;
-  --font-serif: Georgia, "Times New Roman", serif;
+  --font-display: Impact, "Arial Narrow", "Helvetica Neue", sans-serif;
 }
-
-html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
-body { background: var(--color-cream); color: var(--color-forest); }
-::selection { background: var(--color-peach); color: var(--color-forest); }
-:focus-visible { outline: 3px solid #a44820; outline-offset: 5px; }
-
+html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+body { background: white; color: var(--color-ink); }
+::selection { background: var(--color-yellow); color: var(--color-ink); }
+:focus-visible { outline: 3px solid #ed171c; outline-offset: 5px; }
+.heading, .display, .wordmark { font-family: var(--font-display); font-weight: 400; }
 @layer components {
-  .shell { @apply mx-auto w-full max-w-6xl px-6 sm:px-10; }
-  .section { @apply py-16 sm:py-24; }
-  .eyebrow { @apply mb-5 text-xs font-bold uppercase tracking-[0.18em]; }
-  .heading { @apply font-serif text-4xl leading-[1.12] tracking-tight sm:text-5xl; }
-  .copy { @apply text-base leading-8 opacity-85; }
-  .button { @apply inline-flex min-h-12 items-center justify-center gap-6 rounded-full bg-forest px-7 py-3 text-sm font-bold text-cream transition-colors hover:bg-[#386451]; }
-  .photo-placeholder { @apply flex min-h-64 items-center justify-center rounded-3xl border border-forest/20 bg-moss p-8 text-center text-sm tracking-wide; overflow-wrap: anywhere; }
+  .shell { @apply mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-16; }
+  .section { @apply py-10 sm:py-12; }
+  .eyebrow { @apply mb-3 flex items-center gap-3 text-xs font-bold uppercase tracking-widest; }
+  .eyebrow::before { content: ""; @apply block h-[3px] w-10 shrink-0 bg-red; }
+  .heading { @apply text-4xl leading-[1.1] sm:text-5xl; }
+  .copy { @apply text-base leading-relaxed; }
+  .button { @apply inline-flex min-h-12 items-center justify-center gap-6 bg-yellow px-6 py-3 text-base text-ink transition-colors hover:bg-[#ffe74d]; font-family: var(--font-display); font-weight: 400; }
+  .photo-placeholder { @apply relative flex min-h-48 items-center justify-center overflow-hidden bg-[#55595b] p-6 text-center text-sm font-bold text-white; overflow-wrap: anywhere; }
+  .service-card { @apply relative flex min-h-72 flex-col overflow-hidden bg-ink px-6 pb-6 pt-20 text-white; }
+  .service-card h3 { @apply relative mb-3 text-3xl leading-tight; font-family: var(--font-display); font-weight: 400; }
+  .service-card h3::after { content: ""; @apply mt-3 block h-[3px] w-12 bg-red; }
+  .service-card p { @apply relative text-base leading-snug; }
+  .wordmark { @apply text-center text-3xl uppercase leading-[0.9] text-yellow sm:text-4xl; }
 }
-
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
