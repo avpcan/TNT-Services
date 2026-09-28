@@ -1,20 +1,18 @@
+import Image from "next/image";
 import { business } from "../content/business";
 
 export default function HeroSection() {
   return (
-    <section className="shell grid items-center gap-12 pb-16 pt-10 sm:pb-24 sm:pt-16 lg:grid-cols-2" aria-labelledby="hero-title">
-      <div>
-        <p className="eyebrow">Family-run. Ready to lend a hand.</p>
-        <h1 id="hero-title" className="max-w-xl font-serif text-5xl leading-[1.04] tracking-tight sm:text-7xl">A little help.<br />A big difference.</h1>
-        <p className="copy mb-8 mt-7 max-w-md">From a fresh start for your yard to finally saying goodbye to that old hot tub, we’re here to help with the heavy lifting.</p>
-        <a className="button" href="#contact">Tell us about your project <span aria-hidden="true">↗</span></a>
-        <p className="mt-6 text-sm">Landscaping & junk removal in {business.serviceArea}</p>
-      </div>
-      <div className="relative pb-6">
-        <div className="photo-placeholder min-h-80 rounded-t-[8rem] sm:min-h-[28rem]"><span>[HERO_PROJECT_PHOTO]</span></div>
-        <div className="absolute -bottom-1 left-5 right-5 rounded-2xl bg-peach p-5 sm:left-auto sm:right-6 sm:max-w-64">
-          <p className="font-serif text-2xl">Big jobs. Friendly faces.</p>
-          <p className="mt-2 text-sm leading-6">Your local family team for the outdoor to-do list.</p>
+    <section className="relative isolate overflow-hidden bg-ink text-white" aria-labelledby="hero-title">
+      <Image src="/images/skid-steer.png" alt="" fill priority sizes="100vw" className="-z-20 object-cover object-[65%_50%]" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/85 via-black/60 to-black/25" />
+      <div className="shell py-14 sm:py-20 lg:py-24">
+        <p className="mb-6 text-xs font-bold uppercase tracking-widest after:mt-3 after:block after:h-[3px] after:w-10 after:bg-red">A local family team</p>
+        <h1 id="hero-title" className="display text-[clamp(2.5rem,12.5vw,6.8rem)] uppercase leading-[0.98] text-yellow">Big jobs.<br />Friendly faces.</h1>
+        <p className="mb-7 mt-5 max-w-lg text-lg leading-snug sm:text-2xl">Family-run landscaping &amp; junk removal<br className="hidden sm:block" /> in {business.serviceArea}.</p>
+        <div className="flex flex-wrap items-center gap-6">
+          <a className="button" href="#contact">Tell us about your project <span aria-hidden="true">→</span></a>
+          <a href="#services" className="py-3 font-bold underline underline-offset-8 hover:text-yellow">Explore our services</a>
         </div>
       </div>
     </section>
