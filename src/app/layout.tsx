@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "[BUSINESS_NAME] | Landscaping & Junk Removal",
+  title: "TNT Services | Landscaping & Junk Removal",
   description: "A small family business offering fence building, stump removal, hedge planting, and junk removal, including hot tubs, in [SERVICE_AREA].",
   robots: { index: false, follow: false },
 };
