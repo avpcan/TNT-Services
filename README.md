@@ -1,4 +1,4 @@
-# Family business website
+# TNT Services business website
 
 A friendly informational site using Next.js App Router, React, TypeScript, and Tailwind CSS.
 
@@ -21,7 +21,6 @@ npm run typecheck
 npm run build
 ```
 
-Review phone, tablet, and desktop layouts, keyboard navigation, focus visibility, and section links.
 
 ## Iterate
 
@@ -35,10 +34,4 @@ Review phone, tablet, and desktop layouts, keyboard navigation, focus visibility
 
 Before launch, replace every bracketed placeholder, confirm the team copy and services, add real photos with alt text, and update metadata. Draft metadata disables search indexing; remove that restriction when the site is ready. Add a sitemap and sharing image once the domain and branding are known.
 
-## Commits
 
-Follow `AGENTS.md`: one specific purpose and at most one authored function or component per commit. Configuration commits establish the initial scaffold; homepage composition completes the runnable source.
-
-## Initial verification status
-
-Source and whitespace reviewed. Installation, linting, type checking, production build, and browser inspection have not run because Node.js was unavailable and the runtime download was not approved. Dependencies are declared but not yet locked.
