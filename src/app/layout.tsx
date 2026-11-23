@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { business } from "../content/business";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TNT Services | Landscaping & Junk Removal",
-  description: "A small family business offering fence building, stump removal, hedge planting, and junk removal, including hot tubs, in [SERVICE_AREA].",
+  title: `${business.name} | Property Services & RV Repair`,
+  description: `Landscaping, site clearing, junk removal, material delivery, seasonal cleanup, RV repair and more in ${business.serviceArea}.`,
   robots: { index: false, follow: false },
 };
 

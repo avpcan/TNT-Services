@@ -24,10 +24,9 @@ body { background: white; color: var(--color-ink); }
   .copy { @apply text-base leading-relaxed; }
   .button { @apply inline-flex min-h-12 items-center justify-center gap-6 bg-yellow px-6 py-3 text-base text-ink transition-colors hover:bg-[#ffe74d]; font-family: var(--font-display); font-weight: 400; }
   .photo-placeholder { @apply relative flex min-h-48 items-center justify-center overflow-hidden bg-[#55595b] p-6 text-center text-sm font-bold text-white; overflow-wrap: anywhere; }
-  .service-card { @apply relative flex min-h-72 flex-col overflow-hidden bg-ink px-6 pb-6 pt-20 text-white; }
-  .service-card h3 { @apply relative mb-3 text-3xl leading-tight; font-family: var(--font-display); font-weight: 400; }
+  .service-card { @apply overflow-hidden bg-ink text-white; }
+  .service-card h3 { @apply mb-3 text-3xl leading-tight; font-family: var(--font-display); font-weight: 400; }
   .service-card h3::after { content: ""; @apply mt-3 block h-[3px] w-12 bg-red; }
-  .service-card p { @apply relative text-base leading-snug; }
   .wordmark { @apply text-center text-3xl uppercase leading-[0.9] text-yellow sm:text-4xl; }
 }
 @media (prefers-reduced-motion: reduce) {

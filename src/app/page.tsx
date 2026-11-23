@@ -1,7 +1,6 @@
 import SiteHeader from "../components/site-header";
 import HeroSection from "../components/hero-section";
-import LandscapingSection from "../components/landscaping-section";
-import HotTubSection from "../components/hot-tub-section";
+import ServicesSection from "../components/services-section";
 import ProjectGallery from "../components/project-gallery";
 import AboutSection from "../components/about-section";
 import ContactSection from "../components/contact-section";
@@ -13,8 +12,7 @@ export default function Home() {
       <SiteHeader />
       <main id="main">
         <HeroSection />
-        <LandscapingSection />
-        <HotTubSection />
+        <ServicesSection />
         <ProjectGallery />
         <AboutSection />
         <ContactSection />

@@ -8,7 +8,7 @@ export default function SiteHeader() {
           <a className="hover:text-yellow" href="#work">Our work</a>
           <a className="hover:text-yellow" href="#team">Meet the team</a>
         </nav>
-        <a className="button" href="#contact">Let&rsquo;s chat <span aria-hidden="true">→</span></a>
+        <a className="button" href="#contact">Contact us</a>
       </div>
     </header>
   );

@@ -1,9 +1,9 @@
 export const business = {
   name: "TNT Services",
-  serviceArea: "[SERVICE_AREA]",
-  contactMethod: "[CONTACT_METHOD]",
+  serviceArea: "the Cowichan Valley",
+  contactServiceArea: "Cowichan Valley and beyond",
   phone: "[PHONE_NUMBER]",
   email: "[EMAIL_ADDRESS]",
-  hours: "[BUSINESS_HOURS]",
-  teamIntroduction: "[TEAM_INTRODUCTION]",
+  facebookUrl: "https://www.facebook.com/share/14wCQAH8v3i/",
+  teamIntroduction: "We’re a small family team working around the Cowichan Valley. We like the practical jobs that make a place easier to use and look after. If you’ve got a job in mind, tell us what you’d like to get done and we’ll figure out where we can help.",
 };
