@@ -11,8 +11,6 @@ export default function ContactSection() {
         <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-3 lg:border-l lg:border-black/30 lg:pl-8">
           <dt className="font-bold">Phone</dt>
           <dd className="wrap-anywhere">{business.phone}</dd>
-          <dt className="font-bold">Email</dt>
-          <dd className="wrap-anywhere">{business.email}</dd>
           <dt className="font-bold">Facebook</dt>
           <dd><a className="underline underline-offset-4 hover:decoration-2" href={business.facebookUrl}>{business.name} on Facebook</a></dd>
           <dt className="font-bold">Service area</dt>

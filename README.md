@@ -29,7 +29,7 @@ npm run build
 - Section order: `src/app/page.tsx`.
 - Colors and shared styles: `src/app/globals.css`.
 - Photo blocks are placeholders, not actual project images.
-- Contact details remain plain text until real values are supplied. Add phone/email links when replacing them.
+- Add a phone link when replacing the phone number placeholder.
 - No accounts, database, booking, or form backend is configured.
 
 Before launch, replace every bracketed placeholder, confirm the team copy and services, add real photos with alt text, and update metadata. Draft metadata disables search indexing; remove that restriction when the site is ready. Add a sitemap and sharing image once the domain and branding are known.
