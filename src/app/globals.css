@@ -17,18 +17,18 @@ body { background: white; color: var(--color-ink); }
 .heading, .display, .wordmark { font-family: var(--font-display); font-weight: 400; }
 @layer components {
   .shell { @apply mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-16; }
-  .section { @apply py-10 sm:py-12; }
-  .eyebrow { @apply mb-3 flex items-center gap-3 text-xs font-bold uppercase tracking-widest; }
-  .eyebrow::before { content: ""; @apply block h-[3px] w-10 shrink-0 bg-red; }
+  .section { @apply py-12 sm:py-14 lg:py-16; }
+  .eyebrow { @apply mb-3 text-sm font-bold uppercase tracking-widest; }
+  .heading-rule::after { content: ""; @apply mt-4 block h-[3px] w-10 bg-red; }
   .heading { @apply text-4xl leading-[1.1] sm:text-5xl; }
   .copy { @apply text-base leading-relaxed; }
   .button { @apply inline-flex min-h-12 items-center justify-center gap-6 bg-yellow px-6 py-3 text-base text-ink transition-colors hover:bg-[#ffe74d]; font-family: var(--font-display); font-weight: 400; }
   .photo-placeholder { @apply relative flex min-h-48 items-center justify-center overflow-hidden bg-[#55595b] p-6 text-center text-sm font-bold text-white; overflow-wrap: anywhere; }
   .service-card { @apply overflow-hidden bg-ink text-white; }
-  .service-card h3 { @apply mb-3 text-3xl leading-tight; font-family: var(--font-display); font-weight: 400; }
-  .service-card h3::after { content: ""; @apply mt-3 block h-[3px] w-12 bg-red; }
+  .service-card h3 { @apply absolute inset-x-0 bottom-0 px-5 text-3xl leading-tight sm:px-6; font-family: var(--font-display); font-weight: 400; }
+  .service-card h3::after { content: ""; @apply mt-3 block h-[3px] w-10 bg-red; }
   .project-timeline-connector {
-    @apply absolute left-[5px] top-3 w-0.5 bg-ink/20;
+    @apply absolute left-[5px] top-3 w-0.5 bg-white/35;
     height: calc(100% + 1.25rem);
     @media (width >= 48rem) {
       left: 50%;
